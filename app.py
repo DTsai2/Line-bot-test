@@ -338,7 +338,7 @@ def handle_message(event):
         elif fun == '來個驚喜' :
             poker_url_1 = "https://i.imgur.com/B7LAQTe.png" # 符合規格
             poker_url_2 = "https://i.imgur.com/IflqKY7.png" # 1080
-            poker_url_3 = "https://i.imgur.com/kR6jI3X.png" # 800
+            poker_url_3 = "https://i.imgur.com/4izCpAH.png" # 超小
             image_message = TemplateSendMessage(
                 alt_text = "results",
                 template=ImageCarouselTemplate(
