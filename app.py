@@ -336,9 +336,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, flex_message)
             print(fun)
         elif fun == '來個驚喜' :
-            poker_url_1 = "https://images.squarespace-cdn.com/content/v1/5abd8db4620b85fa99f15131/1542340370193-2M2GEBIZH1EOVZWXAL2R/Card+Back+2.0+-+Poker+Size+-+Blue_shw.png"
-            poker_url_2 = "https://boardgames-bg.com/images/thumbnails/1001/1000/detailed/24/bicycle-prestige-100-plastic-poker-playing-card-deck-red-raider-back-usp1018425r-board-game-24268_yde4-zm.png"
-            poker_url_2 = "https://i.pinimg.com/originals/8d/81/0e/8d810ebc5f83549e0dfc9caf65f12c60.png"
+            poker_url_1 = "https://i.imgur.com/B7LAQTe.png" # 符合規格
+            poker_url_2 = "https://i.imgur.com/IflqKY7.png" # 1080
+            poker_url_2 = "https://i.imgur.com/kR6jI3X.png" # 800
             image_message = TemplateSendMessage(
                 alt_text = "results",
                 template=ImageCarouselTemplate(
