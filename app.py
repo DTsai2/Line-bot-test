@@ -27,7 +27,7 @@ import pandas as pd
 import os
 import random
 from flex import multi_flex
-#import time
+import time
 
 
 
@@ -49,7 +49,7 @@ def scrapping(key_food, key_place1, key_place2) :
     script = '//div[@jstcache="{0}"]'.format(key_num)
     try:
         for i in range(5,20,3):
-            last_review = driver.find_elements(By.XPATH, '//div[@jstcache="203"]')
+            last_review = driver.find_elements(By.XPATH, script)
             driver.execute_script('arguments[0].scrollIntoView(true);', last_review[i])
             time.sleep(2)
     except:
