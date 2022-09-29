@@ -336,7 +336,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, flex_message)
             print(fun)
         elif fun == '來個驚喜' :
-            poker_url_1 = "https://i.imgur.com/B7LAQTe.png" # 符合規格
+            poker_url_1 = "https://i.imgur.com/MMm46o3.png" # 符合規格
             poker_url_2 = "https://i.imgur.com/IflqKY7.png" # 1080
             poker_url_3 = "https://i.imgur.com/4izCpAH.png" # 超小
             image_message = TemplateSendMessage(
@@ -350,13 +350,13 @@ def handle_message(event):
                             uri= rest.loc[0, "link"]
                         )),
                     ImageCarouselColumn(
-                        image_url = poker_url_2,
+                        image_url = poker_url_1,
                         action = URIAction(
                             label='意想不到的驚喜',
                             uri= rest.loc[1, "link"]
                         )),
                     ImageCarouselColumn(
-                        image_url = poker_url_3,
+                        image_url = poker_url_1,
                         action = URIAction(
                             label='好膽你就來',
                             uri= rest.loc[2, "link"]
@@ -368,9 +368,9 @@ def handle_message(event):
                             uri= rest.loc[3, "link"]
                         )),
                     ImageCarouselColumn(
-                        image_url = poker_url_3,
+                        image_url = poker_url_1,
                         action = URIAction(
-                            label='錯過會後悔',
+                            label='走過路過不要錯過',
                             uri= rest.loc[4, "link"]
                         ))
                     ]
