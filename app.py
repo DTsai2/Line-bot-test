@@ -337,14 +337,14 @@ def handle_message(event):
             print(fun)
         elif fun == '來個驚喜' :
             poker_url_1 = "https://i.imgur.com/MMm46o3.png" # 符合規格
-            poker_url_2 = "https://i.imgur.com/IflqKY7.png" # 1080
+            poker_url_2 = "https://i.imgur.com/lPAyp58.png" # 1080
             poker_url_3 = "https://i.imgur.com/4izCpAH.png" # 超小
             image_message = TemplateSendMessage(
                 alt_text = "results",
                 template=ImageCarouselTemplate(
                 columns=[
                     ImageCarouselColumn(
-                        image_url = poker_url_1,
+                        image_url = poker_url_2,
                         action = URIAction(
                             label='選我選我',
                             uri= rest.loc[0, "link"]
@@ -370,7 +370,7 @@ def handle_message(event):
                     ImageCarouselColumn(
                         image_url = poker_url_1,
                         action = URIAction(
-                            label='錯過會後悔',
+                            label='走過路過別錯過',
                             uri= rest.loc[4, "link"]
                         ))
                     ]
