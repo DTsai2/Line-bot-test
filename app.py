@@ -344,7 +344,7 @@ def handle_message(event):
                 template=ImageCarouselTemplate(
                 columns=[
                     ImageCarouselColumn(
-                        image_url = poker_url_,
+                        image_url = poker_url_1,
                         action = URIAction(
                             label='選我選我',
                             uri= rest.loc[0, "link"]
